@@ -6,17 +6,16 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text("Vitasta App"),
-        ),
-        body: Center(
-          child: Container(
-            child: Text("Welcome to the $days days of flutter by $name"),
-          ),
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Vitasta App"),
+      ),
+      body: Center(
+        child: Container(
+          child: Text("Welcome to the $days days of flutter by $name"),
         ),
       ),
+      drawer: Drawer(),
     );
   }
 }
