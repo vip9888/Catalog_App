@@ -2,13 +2,13 @@ import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
   final int days = 30;
-  final String name = "Vipul Chaudhary";
+  final String name = "Vipul chaudhary";
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Vitasta App"),
+        title: Text("Vitastha App"),
       ),
       body: Center(
         child: Container(

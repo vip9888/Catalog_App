@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'home_page.dart';
+import 'package:flutter_catalog/pages/login_page.dart';
+import 'pages/home_page.dart';
 
 void main() {
   runApp(MyAPP());
@@ -10,11 +11,26 @@ class MyAPP extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    int days = 30;
-    String name = "Vipul Chaudhary";
-
+    bringvegetables();
     return MaterialApp(
-      home: HomePage(),
+      // home: HomePage(),
+      themeMode: ThemeMode.light,
+      theme: ThemeData(primarySwatch: Colors.deepPurple),
+      darkTheme: ThemeData(
+        brightness: Brightness.dark,
+      ),
+      // initialRoute: "/home",
+      routes: {
+        "/": (context) => Loginpage(), //by default this "/" one will be seen
+        "/home": (context) => HomePage(),
+        "/login": (context) => Loginpage(),
+      },
     );
+  }
+
+  bringvegetables({int rupees = 100}) {
+    //Take cycle
+
+    //Go to sec 30
   }
 }
