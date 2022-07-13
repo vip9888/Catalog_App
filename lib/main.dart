@@ -27,7 +27,7 @@ class MyAPP extends StatelessWidget {
       ),
       // initialRoute: "/home",
       routes: {
-        "/": (context) => Loginpage(), //by default this "/" one will be seen
+        "/": (context) => HomePage(), //by default this "/" one will be seen
         MyRoutes.homeRoute: (context) => HomePage(),
         MyRoutes.loginRoute: (context) => Loginpage(),
       },
